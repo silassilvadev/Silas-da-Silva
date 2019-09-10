@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context="br.com.whatsappclone.cursoandroid.whatsapp.activity.ConversaActivity">
+
+    <include android:id="@+id/tb_conversa"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <ListView
+        android:id="@+id/lv_conversas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@+id/tb_conversa"
+        android:layout_above="@+id/ll_conversa">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_conversa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edit_mensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fundo_redondo"
+            android:textColor="@android:color/black"
+            android:hint="Digite aqui..."
+            android:textColorHint="@android:color/secondary_text_light_nodisable"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_action_send"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabSize="mini" />
+
+        <!--<ImageButton
+            android:id="@+id/bt_enviar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_send"
+            android:background="@drawable/botao_redondo"
+            android:layout_margin="10dp"
+            android:elevation="1dp"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

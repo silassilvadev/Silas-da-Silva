@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ConversaActivity">
+
+    <item android:id="@+id/item_limpar_conversa"
+        android:title="@string/item_limpar_conversa"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item_ver_contato"
+        android:title="@string/item_ver_contato"
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item_pesquisa_conversa"
+        android:title="@string/item_pesquisa"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="300"
+        app:showAsAction="never"/>
+
+</menu>

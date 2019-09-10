@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <string name="texto_validacao">Validação</string>
+    <string name="texto_cadastre">Não tem conta? Cadastre-se</string>
+
+    <!--Itens de Menu-->
+    <string name="item_pesquisa">Pesquisar</string>
+    <string name="item_adicionar">Adicionar</string>
+    <string name="item_configuracoes">Configurações</string>
+    <string name="item_sair">Sair</string>
+
+    <string name="item_limpar_conversa">Limpar conversa</string>
+    <string name="item_ver_contato">Ver contato</string>
+
+    <!--Botões-->
+    <string name="botaoCadastrar">Cadastrar</string>
+    <string name="botaoValidar">Validar</string>
+    <string name="botao_logar">Logar</string>
+    <string name="botao_sair">Sair</string>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="10dp"
+    tools:context="br.com.whatsappclone.cursoandroid.whatsapp.activity.CadastroUsuarioActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/usuario"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <EditText
+        android:id="@+id/edit_cadastro_nome"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_cadastro_email"
+        android:layout_alignStart="@+id/edit_cadastro_email"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <EditText
+        android:id="@+id/edit_cadastro_email"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_cadastro_senha"
+        android:layout_alignStart="@+id/edit_cadastro_senha"
+        android:layout_below="@+id/edit_cadastro_nome"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Digite seu e-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <EditText
+        android:id="@+id/edit_cadastro_senha"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_cadastro_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:textColor="@color/textColorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:theme="@style/botaoPadrao"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_cadastro_senha"
+        android:layout_alignStart="@+id/edit_cadastro_senha"
+        android:layout_below="@+id/edit_cadastro_senha"
+        android:layout_marginTop="57dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/botaoCadastrar"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+</RelativeLayout>
